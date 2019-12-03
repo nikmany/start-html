@@ -1,0 +1,52 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	margin: 0
+	padding: 0
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+h1, h2, h3, h4, h5, h6
+	margin: 0
+	padding: 0
+
+
+p
+	margin: 0
+	padding: 0
+
+ul
+	margin: 0
+	padding: 0
+	list-style: none
+
+a
+	text-decoration: none
+
+b, strong
+	font-weight: bold
+
+
+
+@import "media" // Always at the end
